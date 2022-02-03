@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>SongHyeKyo</title>
+    <!--    favicon-->
+    <link rel="shortcut icon" href="favicon_4ru_icon.ico">
+
+    <!--   스타일 시트 삽입-->
+    <link href="../assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/base.css" rel="stylesheet" type="text/css">
+    <!--공통레이아웃 서식-->
+    <link href="../assets/css/layouts.css" rel="stylesheet" type="text/css">
+    <!--메인화면 영상,메뉴 서식-->
+    <link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+
+    <link href="../assets/css/gallery.css" rel="stylesheet" type="text/css">
+
+    <!--웹폰트(noto sans) 삽입-->
+    <link href="../assets/css/fonts.css" rel="stylesheet" type="text/css">
+    <!--패럴랙스 스타일시트 삽입-->
+    <link href="../assets/css/parallax.css" rel="stylesheet" type="text/css">
+    <!--아이콘폰트 삽입-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--자바스크립트&제이쿼리-->
+    <script src="../assets/js/jquery-1.11.1.min.js"></script>
+    <script src="../assets/js/noise.js"></script>
+    <!--    페이지별 링크화면 나오게하기-->
+    <script src="../assets/js/link.js"></script>
+    <!--    sns아이콘-->
+    <script src="../assets/js/layout.js"></script>
+    <!--    메인 패럴랙스, 영상사이즈 조정-->
+    <script src="../assets/js/main.js"></script>
+    <!--패럴랙스 제이쿼리 삽입-->
+    <script src="../assets/js/jquery.parallax.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body id="port">
+    <!--   배경 노이즈 효과-->
+    <canvas id="noise" class="noise"></canvas>
+
+    <header class="clearfix">
+        <h1>
+            <a href="../index.html" title="메인페이지로바로가기">SONG HYE KYO</a>
+        </h1>
+        <!--        우측 토글버튼-->
+        <div class="toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <h3>gallery</h3>
+    <!-- Swiper -->
+    <div class="swiper-container swiper-container-h">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-container swiper-container-v">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../assets/images/gallery01_01.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery01_02.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery01_03.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery01_04.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-v"></div>
+                </div>
+                <div class="txtbox">
+                    <p class="title">뉴욕, '랄프 로렌' 패션쇼</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-container swiper-container-v">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../assets/images/gallery04_01.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery04_02.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery04_03.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery04_04.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery04_05.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery04_06.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-v"></div>
+                </div>
+                <div class="txtbox">
+                    <p class="title">드라마'남자친구'제작발표회</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-container swiper-container-v">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../assets/images/gallery03_01.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery03_02.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery03_03.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery03_04.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery03_05.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery03_06.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-v"></div>
+                </div>
+                <div class="txtbox">
+                    <p class="title">레드카펫 개막식 행사</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-container swiper-container-v">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../assets/images/gallery02_02.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery02_01.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery02_03.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery02_04.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-v"></div>
+                </div>
+                <div class="txtbox">
+                    <p class="title">인스타그램</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-container swiper-container-v">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../assets/images/gallery05_01.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery05_02.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery05_03.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery05_04.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery05_05.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../assets/images/gallery05_06.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-v"></div>
+                </div>
+                <div class="txtbox">
+                    <p class="title">인스타그램</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+
+    <!--           서브페이지에서만 사용하는 내비게이션-->
+    <nav class="sub_nav">
+        <ul>
+            <li><a href="./profile.html">profile</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+            <li><a href="./pictorial.html">pictorial</a></li>
+            <li><a href="./work.html">work</a></li>
+        </ul>
+    </nav>
+
+    <!--햄버거 메뉴 클릭시 나오는 전체 메뉴-->
+    <div class="toggleMenu">
+        <div class="bgText">MENU</div>
+        <nav>
+            <ul>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./profile.html" title="Profile">Profile</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./news.html" title="News">News</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="#" title="Gallery">Gallery</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./pictorial.html" title="pictorial">pictorial</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./work.html" title="work">work</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        let swiperH = new Swiper('.swiper-container-h', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                1200: {
+                    slidesPerView: 4,
+                },
+                900: {
+                    slidesPerView: 3,
+                },
+                600: {
+                    slidesPerView: 2,
+                }
+            }
+        });
+        let swiperV = new Swiper('.swiper-container-v', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 0,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination-v',
+                clickable: true,
+            },
+        });
+
+        $(function () {
+            //마우스 오버 애니메이션
+            $('.sub_nav > ul > li').hover(function () {
+                $(this).toggleClass('hover');
+                $(this).siblings().toggleClass('opa');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

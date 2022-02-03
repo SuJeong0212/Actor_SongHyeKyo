@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>SongHyeKyo</title>
+    <!--    favicon-->
+    <link rel="shortcut icon" href="favicon_4ru_icon.ico">
+
+    <!--   스타일 시트 삽입-->
+    <link href="./assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./assets/css/base.css" rel="stylesheet" type="text/css">
+    <!--공통레이아웃 서식-->
+    <link href="./assets/css/layouts.css" rel="stylesheet" type="text/css">
+    <!--메인화면 영상,메뉴 서식-->
+    <link href="./assets/css/main.css" rel="stylesheet" type="text/css">
+    <!--웹폰트(noto sans) 삽입-->
+    <link href="./assets/css/fonts.css" rel="stylesheet" type="text/css">
+    <!--패럴랙스 스타일시트 삽입-->
+    <link href="./assets/css/parallax.css" rel="stylesheet" type="text/css">
+    <!--아이콘폰트 삽입-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--자바스크립트&제이쿼리-->
+    <script src="./assets/js/jquery-1.11.1.min.js"></script>
+    <script src="./assets/js/noise.js"></script>
+    <!--    페이지별 링크화면 나오게하기-->
+    <script src="./assets/js/link.js"></script>
+    <!--    sns아이콘-->
+    <script src="./assets/js/layout.js"></script>
+    <!--    메인 패럴랙스, 영상사이즈 조정-->
+    <script src="./assets/js/main.js"></script>
+    <!--패럴랙스 제이쿼리 삽입-->
+    <script src="./assets/js/jquery.parallax.js"></script>
+
+</head>
+
+<body id="port">
+    <!--   배경 노이즈 효과-->
+    <canvas id="noise" class="noise"></canvas>
+
+    <header class="clearfix">
+        <h1>
+            <a href="index.html" title="메인페이지로바로가기">SONG HYE KYO</a>
+        </h1>
+        <!--        우측 토글버튼-->
+        <div class="toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <section>
+        <!--        배경에 영상 삽입-->
+        <div class="bgMovie">
+            <video preload="auto" autoplay="autoplay" loop="" muted="muted">
+                <source src="./assets/images/main.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!--        메인화면에 나오는 메뉴-->
+        <nav class="gnb_main parallax-layer">
+            <ul>
+                <li><a href="./docs/profile.html" title="">Profile</a><span class="fill">Profile</span></li>
+                <li><a href="./docs/news.html" title="">News</a><span class="fill">News</span></li>
+                <li><a href="./docs/gallery.html" title="">Gallery</a><span class="fill">Gallery</span></li>
+                <li><a href="./docs/pictorial.html" title="cf">Pictorial</a><span class="fill">pictorial</span></li>
+                <li><a href="./docs/work.html" title="work">Work</a><span class="fill">work</span></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!--    sns 사이드 바-->
+    <div class="snsBtn">
+        <ul>
+            <li><a href="https://www.instagram.com/kyo1122/?hl=ko" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i><span class="bg"></span></a></li>
+            <li><a href="https://www.facebook.com/United-Artists-Agency-1669769753341856" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i><span class="bg"></span></a></li>
+            <li><a href="https://www.youtube.com/channel/UCt9KjUqKi7KRNp7yFSwzrrg" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i><span class="bg"></span></a></li>
+            <li><a href="http://www.songhyekyo.co.kr/" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i><span class="bg"></span></a></li>
+        </ul>
+    </div>
+
+    <!--햄버거 메뉴 클릭시 나오는 전체 메뉴-->
+    <div class="toggleMenu">
+        <div class="bgText">MENU</div>
+        <nav>
+            <ul>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./docs/profile.html" title="Profile">Profile</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./docs/news.html" title="News">News</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./docs/gallery.html" title="Gallery">Gallery</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./docs/pictorial.html" title="pictorial">pictorial</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./docs/work.html" title="work">work</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+</body></html>

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>SongHyeKyo</title>
+    <!--    favicon-->
+    <link rel="shortcut icon" href="favicon_4ru_icon.ico">
+
+    <!--   스타일 시트 삽입-->
+    <link href="../assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/base.css" rel="stylesheet" type="text/css">
+    <!--공통레이아웃 서식-->
+    <link href="../assets/css/layouts.css" rel="stylesheet" type="text/css">
+    <!--메인화면 영상,메뉴 서식-->
+    <link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../assets/css/pictorial.css">
+    <!--웹폰트(noto sans) 삽입-->
+    <link href="../assets/css/fonts.css" rel="stylesheet" type="text/css">
+    <!--패럴랙스 스타일시트 삽입-->
+    <link href="../assets/css/parallax.css" rel="stylesheet" type="text/css">
+    <!--아이콘폰트 삽입-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--자바스크립트&제이쿼리-->
+    <script src="../assets/js/jquery-1.11.1.min.js"></script>
+    <script src="../assets/js/noise.js"></script>
+    <!--    페이지별 링크화면 나오게하기-->
+    <script src="../assets/js/link.js"></script>
+    <!--    sns아이콘-->
+    <script src="../assets/js/layout.js"></script>
+    <!--    메인 패럴랙스, 영상사이즈 조정-->
+    <script src="../assets/js/main.js"></script>
+    <!--패럴랙스 제이쿼리 삽입-->
+    <script src="../assets/js/jquery.parallax.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body id="port">
+    <!--   배경 노이즈 효과-->
+    <canvas id="noise" class="noise"></canvas>
+
+    <header class="clearfix">
+        <h1>
+            <a href="../index.html" title="메인페이지로바로가기">SONG HYE KYO</a>
+        </h1>
+        <!--        우측 토글버튼-->
+        <div class="toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <h3>pictorial</h3>
+    <div class="discBox">
+        <ul class="list clearfix">
+            <li class="active">
+                <div class="box">
+                    <img src="../assets/images/post01.jpg" alt="post">
+                    <ul class="track">
+                        <li class="header">송혜교</li>
+                        <li>Laneige - 라네즈</li>
+                        <li>스킨 라이트 테라피Ⅱ</li>
+                    </ul>
+                </div>
+                <div class="title">메이크온</div>
+                <div class="txt">
+                    <p class="release">2019.04</p>
+                    <p class="cap">TV 광고</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <img src="../assets/images/post02.jpg" alt="post">
+                    <ul class="track">
+                        <li class="header">송혜교 X 유아인</li>
+                        <li>The New Royals</li>
+                    </ul>
+                </div>
+                <div class="title">W Korea</div>
+                <div class="txt">
+                    <p class="release">2017.03</p>
+                    <p class="cap">[3월호] 잡지 표지화보</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <img src="../assets/images/post03.jpg" alt="post">
+                    <ul class="track">
+                        <li class="header">송혜교 X 아이웨어</li>
+                        <li>New Collection - 'BLOSSOM'</li>
+                    </ul>
+                </div>
+                <div class="title">VEDI VERO</div>
+                <div class="txt">
+                    <p class="release">2019.01</p>
+                    <p class="cap">S/S NEW 캠페인 화보</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <img src="../assets/images/post04.jpg" alt="post">
+                    <ul class="track">
+                        <li class="header">송혜교 X 강동원</li>
+                        <li>두근두근 내인생 - 어느 멋진 날</li>
+                        <li>'One Fine Day 2'</li>
+                    </ul>
+                </div>
+                <div class="title">VOGUE Korea</div>
+                <div class="txt">
+                    <p class="release">2014.08</p>
+                    <p class="cap">[9월호] 잡지 화보</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <img src="../assets/images/post05.jpg" alt="post">
+                    <ul class="track">
+                        <li class="header">송혜교</li>
+                        <li>B컷 - 송혜교 SNS 제공</li>
+                    </ul>
+                </div>
+                <div class="title">ELLE</div>
+                <div class="txt">
+                    <p class="release">2020.04</p>
+                    <p class="cap">잡지 화보</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <img src="../assets/images/post06.jpeg" alt="post">
+                    <ul class="track">
+                        <li class="header">송혜교 X 슈즈</li>
+                        <li>2020 봄 시즌 캠페인</li>
+                        <li>'샤인 온 미' 화보</li>
+                    </ul>
+                </div>
+                <div class="title">슈콤마보니</div>
+                <div class="txt">
+                    <p class="release">2020.10</p>
+                    <p class="cap">20 Winter Collection</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <img src="../assets/images/post07.jpg" alt="post">
+                    <ul class="track">
+                        <li class="header">송혜교</li>
+                        <li>'Two Tone moment'</li>
+                        <li>'올봄, 여자의 마음은 투톤이다'</li>
+                    </ul>
+                </div>
+                <div class="title">Laneige</div>
+                <div class="txt">
+                    <p class="release">2015.12</p>
+                    <p class="cap">TV 광고 & 화보</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <img src="../assets/images/post08.jpg" alt="post">
+                    <ul class="track">
+                        <li class="header">송혜교</li>
+                        <li>White List</li>
+                    </ul>
+                </div>
+                <div class="title">ELLE</div>
+                <div class="txt">
+                    <p class="release">2013.01</p>
+                    <p class="cap">[1월호] 잡지 표지 화보</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <img src="../assets/images/post09.jpg" alt="post">
+                    <ul class="track">
+                        <li class="header">송혜교 X 주얼리</li>
+                        <li>비 마이 러브 (Bee My Love)</li>
+                    </ul>
+                </div>
+                <div class="title">쇼메 메종</div>
+                <div class="txt">
+                    <p class="release">2020.01.03</p>
+                    <p class="cap">캠페인 화보</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <img src="../assets/images/post10.jpg" alt="post">
+                    <ul class="track">
+                        <li class="header">송혜교</li>
+                        <li>SUECOMMA BONNIE</li>
+                        <li>My Little Sunshine</li>
+                    </ul>
+                </div>
+                <div class="title">BAZZAR</div>
+                <div class="txt">
+                    <p class="release">2019.04</p>
+                    <p class="cap">하퍼스바자 화보</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <img src="../assets/images/post11.jpg" alt="post">
+                    <ul class="track">
+                        <li class="header">송혜교</li>
+                        <li>'그레이스 앤드 캐릭터' 광고 캠페인</li>
+                        <li>쇼메 '비 마이 러브' 컬렉션</li>
+                    </ul>
+                </div>
+                <div class="title">조세핀 아그레뜨</div>
+                <div class="txt">
+                    <p class="release">2019.08</p>
+                    <p class="cap">광고 캠페인</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <img src="../assets/images/post12_bazzar.png" alt="post">
+                    <ul class="track">
+                        <li class="header">송혜교</li>
+                        <li>시네마 엔젤</li>
+                        <li>[바자]코리아, 차이나 커버</li>
+                    </ul>
+                </div>
+                <div class="title">BAZZAR</div>
+                <div class="txt">
+                    <p class="release">2013.09</p>
+                    <p class="cap">[12월호] 잡지 표지 화보</p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <img src="../assets/images/post13.jpg" alt="post">
+                    <ul class="track">
+                        <li class="header">송혜교</li>
+                        <li>The New Royals</li>
+                    </ul>
+                </div>
+                <div class="title">W Korea</div>
+                <div class="txt">
+                    <p class="release">2019.03</p>
+                    <p class="cap">[3월호] 잡지 표지 화보</p>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <div class="m_discBox">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../assets/images/post01.jpg" alt="post">
+                        <ul class="track">
+                            <li class="header">송혜교</li>
+                            <li>Laneige - 라네즈</li>
+                            <li>스킨 라이트 테라피Ⅱ</li>
+                        </ul>
+                    </div>
+                    <div class="title">메이크온</div>
+                    <div class="txt">
+                        <p class="release">2019.04</p>
+                        <p class="cap">TV 광고</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../assets/images/post02.jpg" alt="post">
+                        <ul class="track">
+                            <li class="header">송혜교 X 유아인</li>
+                            <li>The New Royals</li>
+                        </ul>
+                    </div>
+                    <div class="title">W Korea</div>
+                    <div class="txt">
+                        <p class="release">2017.03</p>
+                        <p class="cap">[3월호] 잡지 표지화보</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../assets/images/post03.jpg" alt="post">
+                        <ul class="track">
+                            <li class="header">송혜교 X 아이웨어</li>
+                            <li>New Collection - 'BLOSSOM'</li>
+                        </ul>
+                    </div>
+                    <div class="title">VEDI VERO</div>
+                    <div class="txt">
+                        <p class="release">2019.01</p>
+                        <p class="cap">S/S NEW 캠페인 화보</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../assets/images/post04.jpg" alt="post">
+                        <ul class="track">
+                            <li class="header">송혜교 X 강동원</li>
+                            <li>두근두근 내인생 - 어느 멋진 날</li>
+                            <li>'One Fine Day 2'</li>
+                        </ul>
+                    </div>
+                    <div class="title">VOGUE Korea</div>
+                    <div class="txt">
+                        <p class="release">2014.08</p>
+                        <p class="cap">[9월호] 잡지 화보</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../assets/images/post05.jpg" alt="post">
+                        <ul class="track">
+                            <li class="header">송혜교</li>
+                            <li>B컷 - 송혜교 SNS 제공</li>
+                        </ul>
+                    </div>
+                    <div class="title">ELLE</div>
+                    <div class="txt">
+                        <p class="release">2020.04</p>
+                        <p class="cap">잡지 화보</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../assets/images/post06.jpeg" alt="post">
+                        <ul class="track">
+                            <li class="header">송혜교 X 슈즈</li>
+                            <li>2020 봄 시즌 캠페인</li>
+                            <li>'샤인 온 미' 화보</li>
+                        </ul>
+                    </div>
+                    <div class="title">슈콤마보니</div>
+                    <div class="txt">
+                        <p class="release">2020.10</p>
+                        <p class="cap">20 Winter Collection</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../assets/images/post07.jpg" alt="post">
+                        <ul class="track">
+                            <li class="header">송혜교</li>
+                            <li>'Two Tone moment'</li>
+                            <li>'올봄, 여자의 마음은 투톤이다'</li>
+                        </ul>
+                    </div>
+                    <div class="title">Laneige</div>
+                    <div class="txt">
+                        <p class="release">2015.12</p>
+                        <p class="cap">TV 광고 & 화보</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../assets/images/post08.jpg" alt="post">
+                        <ul class="track">
+                            <li class="header">송혜교</li>
+                            <li>White List</li>
+                        </ul>
+                    </div>
+                    <div class="title">ELLE</div>
+                    <div class="txt">
+                        <p class="release">2013.01</p>
+                        <p class="cap">[1월호] 잡지 표지 화보</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../assets/images/post09.jpg" alt="post">
+                        <ul class="track">
+                            <li class="header">송혜교 X 주얼리</li>
+                            <li>비 마이 러브 (Bee My Love)</li>
+                        </ul>
+                    </div>
+                    <div class="title">쇼메 메종</div>
+                    <div class="txt">
+                        <p class="release">2020.01.03</p>
+                        <p class="cap">캠페인 화보</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../assets/images/post10.jpg" alt="post">
+                        <ul class="track">
+                            <li class="header">송혜교</li>
+                            <li>SUECOMMA BONNIE</li>
+                            <li>My Little Sunshine</li>
+                        </ul>
+                    </div>
+                    <div class="title">BAZZAR</div>
+                    <div class="txt">
+                        <p class="release">2019.04</p>
+                        <p class="cap">하퍼스바자 화보</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../assets/images/post11.jpg" alt="post">
+                        <ul class="track">
+                            <li class="header">송혜교</li>
+                            <li>'그레이스 앤드 캐릭터' 광고 캠페인</li>
+                            <li>쇼메 '비 마이 러브' 컬렉션</li>
+                        </ul>
+                    </div>
+                    <div class="title">조세핀 아그레뜨</div>
+                    <div class="txt">
+                        <p class="release">2019.08</p>
+                        <p class="cap">광고 캠페인</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../assets/images/post12_bazzar.png" alt="post">
+                        <ul class="track">
+                            <li class="header">송혜교</li>
+                            <li>시네마 엔젤</li>
+                            <li>[바자]코리아, 차이나 커버</li>
+                        </ul>
+                    </div>
+                    <div class="title">BAZZAR</div>
+                    <div class="txt">
+                        <p class="release">2013.09</p>
+                        <p class="cap">[12월호] 잡지 표지 화보</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="../assets/images/post13.jpg" alt="post">
+                        <ul class="track">
+                            <li class="header">송혜교</li>
+                            <li>The New Royals</li>
+                        </ul>
+                    </div>
+                    <div class="title">W Korea</div>
+                    <div class="txt">
+                        <p class="release">2019.03</p>
+                        <p class="cap">[3월호] 잡지 표지 화보</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <!--           서브페이지에서만 사용하는 내비게이션-->
+    <nav class="sub_nav">
+        <ul>
+            <li><a href="./profile.html">profile</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li class="active"><a href="#">pictorial</a></li>
+            <li><a href="./work.html">work</a></li>
+        </ul>
+    </nav>
+
+    <!--햄버거 메뉴 클릭시 나오는 전체 메뉴-->
+    <div class="toggleMenu">
+        <div class="bgText">MENU</div>
+        <nav>
+            <ul>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./profile.html" title="Profile">Profile</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./news.html" title="News">News</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./gallery.html" title="Gallery">Gallery</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="#" title="pictorial">pictorial</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./work.html" title="work">work</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        $(function () {
+            //앨범 목록에 마우스오버시 동작
+            $('.discBox > .list > li').mouseenter(function () {
+
+                //만약에 내가 li요소에 클래스명이 active가 없으면
+                if ($(this).hasClass('active') == false) {
+                    //아래서식을 적용한다.
+                    $(this).addClass('hover');
+                    $(this).siblings('li').addClass('unhover');
+                }
+                $(this).css({
+                    'cursor': 'url(../assets/images/cursor_pink.cur), auto'
+                });
+            });
+
+            //마우스아웃시 서식 원래대로
+            $('.discBox > .list > li').mouseleave(function () {
+                $(this).removeClass('hover');
+                $(this).siblings('li').removeClass('unhover');
+                $(this).css({
+                    cursor: 'default'
+                });
+            });
+
+            //앨범 목록을 클릭하면
+            $('.discBox > .list > li').click(function () {
+                $(this).addClass('active').siblings('li').removeClass('active');
+                $(this).removeClass('hover');
+                $(this).find('ul.track').delay(500);
+            });
+
+            $('.sub_nav > ul > li').hover(function () {
+                $(this).toggleClass('hover');
+                $(this).siblings().toggleClass('opa');
+            });
+
+            var mql = window.matchMedia("screen and (max-height:1300px)");
+
+            if (mql.matches) {
+
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 1,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    slidesOffsetAfter: 10,
+                    slidesOffsetBefore: 10,
+                    spaceBetween: 50,
+                    breakpoints: {
+                        // when window width is >= 480px
+                        520: {
+                            slidesPerView: 2,
+                            spaceBetween: 30
+                        },
+                        // when window width is >= 640px
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
+                        // when window width is >= 640px
+                        1200: {
+                            slidesPerView: 4,
+                            spaceBetween: 30,
+                        }
+                    }
+                });
+
+            } else {
+
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 1,
+                    slidesPerColumn: 2,
+                    slidesPerColumnFill: 'column',
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    slidesOffsetAfter: 10,
+                    slidesOffsetBefore: 10,
+                    spaceBetween: 50,
+                    breakpoints: {
+                        // when window width is >= 480px
+                        520: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                            slidesPerColumn: 2,
+                            slidesPerColumnFill: 'column',
+                        },
+                        // when window width is >= 640px
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                            slidesPerColumn: 2,
+                            slidesPerColumnFill: 'column',
+                        },
+                        // when window width is >= 640px
+                        1200: {
+                            slidesPerView: 4,
+                            spaceBetween: 30,
+                            slidesPerColumn: 2,
+                            slidesPerColumnFill: 'column',
+                        }
+                    }
+                });
+
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>

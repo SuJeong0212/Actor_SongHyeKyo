@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>SongHyeKyo</title>
+    <!--    favicon-->
+    <link rel="shortcut icon" href="favicon_4ru_icon.ico">
+
+    <!--   스타일 시트 삽입-->
+    <link href="../assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/base.css" rel="stylesheet" type="text/css">
+    <!--공통레이아웃 서식-->
+    <link href="../assets/css/layouts.css" rel="stylesheet" type="text/css">
+    <!--메인화면 영상,메뉴 서식-->
+    <link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../assets/css/profile.css">
+    <!--웹폰트(noto sans) 삽입-->
+    <link href="../assets/css/fonts.css" rel="stylesheet" type="text/css">
+    <!--패럴랙스 스타일시트 삽입-->
+    <link href="../assets/css/parallax.css" rel="stylesheet" type="text/css">
+    <!--아이콘폰트 삽입-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--자바스크립트&제이쿼리-->
+    <script src="../assets/js/jquery-1.11.1.min.js"></script>
+    <script src="../assets/js/noise.js"></script>
+    <!--    페이지별 링크화면 나오게하기-->
+    <script src="../assets/js/link.js"></script>
+    <!--    sns아이콘-->
+    <script src="../assets/js/layout.js"></script>
+    <!--    메인 패럴랙스, 영상사이즈 조정-->
+    <script src="../assets/js/main.js"></script>
+    <!--패럴랙스 제이쿼리 삽입-->
+    <script src="../assets/js/jquery.parallax.js"></script>
+
+</head>
+
+<body id="port">
+    <!--   배경 노이즈 효과-->
+    <canvas id="noise" class="noise"></canvas>
+
+    <header class="clearfix">
+        <h1>
+            <a href="../index.html" title="메인페이지로바로가기">SONG HYE KYO</a>
+        </h1>
+        <!--        우측 토글버튼-->
+        <div class="toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <div class="title">
+
+        <h3>SONG HYE- KYO</h3>
+
+        <h3>SONG HYE- KYO</h3>
+
+        <div class="titleBar"></div>
+
+        <p class="txt">ACTOR</p>
+    </div>
+
+
+        <div class="content">
+
+            <ul class="left">
+
+                <li>Birth</li>
+
+                <li>Height</li>
+
+                <li>Agency</li>
+
+                <li>Debut</li>
+
+            </ul>
+
+
+
+            <ul class="right">
+
+                <li>1981.11.22</li>
+
+                <li>161cm</li>
+
+                <li>United Artists Agency</li>
+
+                <li>1996년 CF '선경 스마트' 모델</li>
+
+            </ul>
+
+        </div>
+
+
+
+        <div class="photo">
+
+            <img src="../assets/images/profile_img.png" alt="송혜교프로필사진">
+
+            <div class="lineBox"></div>
+
+            <div class="phototitle">Profile</div>
+
+        </div>
+
+        <!--           서브페이지에서만 사용하는 내비게이션-->
+        <nav class="sub_nav">
+            <ul>
+                <li class="active"><a href="#">profile</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./pictorial.html">pictorial</a></li>
+                <li><a href="./work.html">work</a></li>
+            </ul>
+        </nav>
+        
+        <!--햄버거 메뉴 클릭시 나오는 전체 메뉴-->
+    <div class="toggleMenu">
+        <div class="bgText">MENU</div>
+        <nav>
+            <ul>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="#" title="Profile">Profile</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./news.html" title="News">News</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./gallery.html" title="Gallery">Gallery</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./pictorial.html" title="pictorial">pictorial</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./work.html" title="work">work</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        $(function(){
+            //마우스 오버 애니메이션
+            $('.sub_nav > ul > li').hover(function(){
+                $(this).toggleClass('hover');
+                $(this).siblings().toggleClass('opa');
+            });
+        });
+    </script>
+
+</body>
+</html>

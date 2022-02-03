@@ -205,7 +205,7 @@ ul>li>a>span.bg {
 }
 
 .sub_nav li.active {
-    width: 80px;
+    width: auto;
 }
 
 .sub_nav li.active a {
@@ -234,10 +234,6 @@ ul>li>a>span.bg {
 
 .sub_nav li.hover:nth-child(5) {
     width: 60px;
-}
-
-.sub_nav li.hover:last-child {
-    width: 97px;
 }
 
 .sub_nav li:hover a {

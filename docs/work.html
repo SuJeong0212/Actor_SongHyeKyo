@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>SongHyeKyo</title>
+    <!--    favicon-->
+    <link rel="shortcut icon" href="favicon_4ru_icon.ico">
+
+    <!--   스타일 시트 삽입-->
+    <link href="../assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/base.css" rel="stylesheet" type="text/css">
+    <!--공통레이아웃 서식-->
+    <link href="../assets/css/layouts.css" rel="stylesheet" type="text/css">
+    <!--메인화면 영상,메뉴 서식-->
+    <link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../assets/css/work.css">
+    <!--웹폰트(noto sans) 삽입-->
+    <link href="../assets/css/fonts.css" rel="stylesheet" type="text/css">
+    <!--패럴랙스 스타일시트 삽입-->
+    <link href="../assets/css/parallax.css" rel="stylesheet" type="text/css">
+    <!--아이콘폰트 삽입-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--자바스크립트&제이쿼리-->
+    <script src="../assets/js/jquery-1.11.1.min.js"></script>
+    <script src="../assets/js/noise.js"></script>
+    <!--    페이지별 링크화면 나오게하기-->
+    <script src="../assets/js/link.js"></script>
+    <!--    sns아이콘-->
+    <script src="../assets/js/layout.js"></script>
+    <!--    메인 패럴랙스, 영상사이즈 조정-->
+    <script src="../assets/js/main.js"></script>
+    <!--패럴랙스 제이쿼리 삽입-->
+    <script src="../assets/js/jquery.parallax.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body id="port">
+    <!--   배경 노이즈 효과-->
+    <canvas id="noise" class="noise"></canvas>
+
+    <header class="clearfix">
+        <h1>
+            <a href="../index.html" title="메인페이지로바로가기">SONG HYE KYO</a>
+        </h1>
+        <!--        우측 토글버튼-->
+        <div class="toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <h3>work</h3>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../assets/images/producing_001.jpg" alt="">
+                <div class="txtBg">
+                    <div class="txt">'드라마' 남자친구 - tvN</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/images/producing_002.png" alt="">
+                <div class="txtBg">
+                    <div class="txt">'드라마' 태양의 후예 - KBS 공사창립특별기획</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/images/producing_003.jpg" alt="">
+                <div class="txtBg">
+                    <div class="txt">'드라마' 그 겨울, 바람이 분다 - SBS</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/images/producing_004.jpg" alt="">
+                <div class="txtBg">
+                    <div class="txt">'영화' 두근두근 내인생</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/images/producing_005.jpg" alt="">
+                <div class="txtBg">
+                    <div class="txt">'드라마' 그들이 사는 세상 - KBS</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/images/producing_006.jpg" alt="">
+                <div class="txtBg">
+                    <div class="txt">'드라마' 풀 하우스 - KBS 미니시리즈</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/images/producing_007.jpg" alt="">
+                <div class="txtBg">
+                    <div class="txt">'드라마' 햇빛 쏟아지다 - SBS 스페셜</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/images/producing_008.jpg" alt="">
+                <div class="txtBg">
+                    <div class="txt">'드라마' 올인 - SBS</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/images/producing_009.jpg" alt="">
+                <div class="txtBg">
+                    <div class="txt">'드라마' 가을동화 - KBS2</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/images/producing_010.jpg" alt="">
+                <div class="txtBg">
+                    <div class="txt">'드라마' 순풍산부인과 - SBS</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--           서브페이지에서만 사용하는 내비게이션-->
+    <nav class="sub_nav">
+        <ul>
+            <li><a href="./profile.html">profile</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./pictorial.html">pictorial</a></li>
+            <li class="active"><a href="#">work</a></li>
+        </ul>
+    </nav>
+
+    <!--햄버거 메뉴 클릭시 나오는 전체 메뉴-->
+    <div class="toggleMenu">
+        <div class="bgText">MENU</div>
+        <nav>
+            <ul>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./profile.html" title="Profile">Profile</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./news.html" title="News">News</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./gallery.html" title="Gallery">Gallery</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="./pictorial.html" title="pictorial">pictorial</a>
+                </li>
+                <li class="clearfix">
+                    <div class="bar"></div>
+                    <a href="#" title="work">work</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            slidesPerColumn: 2, //1칸에 2장의 이미지
+            spaceBetween: 30, //간격
+            mousewheel: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                1400: {
+                    slidesPerView: 4,
+                    slidesPerColumn: 2,
+                },
+                965: {
+                    slidesPerView: 3,
+                    slidesPerColumn: 2,
+                },
+                560: {
+                    slidesPerView: 2,
+                    slidesPerColumn: 2,
+                }
+            }
+
+        });
+
+        $(function () {
+            //마우스 오버 애니메이션
+            $('.sub_nav > ul > li').hover(function () {
+                $(this).toggleClass('hover');
+                $(this).siblings().toggleClass('opa');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
